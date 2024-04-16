@@ -22,7 +22,7 @@
             d = {
                 deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
                 imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
-                path: "/_next/image",
+                path: "assets/images",
                 loader: "default",
                 dangerouslyAllowSVG: !1,
                 unoptimized: !1
@@ -1060,7 +1060,7 @@
         execute() {
             if (this.resetIfRetryingFailed(), this.done) this.callback();
             else {
-                if (window.kakao && window.kakao.maps) return console.warn("Kakao Maps이 이미 외부 요소에 의해 로딩되어 있습니다.설정한 옵션과 일치 하지 않을 수 있으며, 이에 따른 예상치 동작이 발생할 수 있습니다."), void window.kakao.maps.load(this.callback);
+                if (window.kakao && window.kakao.maps) return console.warn("Kakao Maps가 이미 외부 요소에 의해 로딩되어 있습니다. 설정한 옵션과 일치하지 않을 수 있으며, 이에 따른 예상치 못한 동작이 발생할 수 있습니다."), void window.kakao.maps.load(this.callback);
                 this.loading || (this.loading = !0, this.setScript())
             }
         }
