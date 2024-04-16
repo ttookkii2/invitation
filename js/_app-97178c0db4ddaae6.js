@@ -24,7 +24,7 @@
                     pageProps: i
                 } = n, u = () => {
                     var n, o;
-                    !window.Kakao || (null === (n = window.Kakao) || void 0 === n ? void 0 : n.isInitialized()) || null === (o = window.Kakao) || void 0 === o || o.init("85dcc27223f8590a9070704449045077")
+                    !window.Kakao || (null === (n = window.Kakao) || void 0 === n ? void 0 : n.isInitialized()) || null === (o = window.Kakao) || void 0 === o || o.init("6b03504e6f33c8440f71636cc52e4a77")
                 };
                 return (0, e.useEffect)(() => {
                     u()
